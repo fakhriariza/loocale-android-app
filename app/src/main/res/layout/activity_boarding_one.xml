@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".boarding.BoardingOneActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_navbar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_navbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/iv_nextBoardingOne"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_39sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:background="@drawable/ic_navigate_next_card" />
+
+        <ImageView
+            android:id="@+id/iv_prevoiusBoardingOne"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_39sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:background="@drawable/ic_navigate_previous_card"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/rl_start"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_39sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="true"
+                android:layout_gravity="center"
+                android:text="@string/boarding_three_starttitle"
+                android:textSize="@dimen/_16ssp"
+                android:textColor="@color/loocale_secondary"/>
+
+            <ImageView
+                android:id="@+id/iv_nextBoardingThree"
+                android:layout_width="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_vector_arrow" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

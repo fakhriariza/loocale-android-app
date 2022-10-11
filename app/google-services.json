@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "903272230008",
+    "project_id": "loocale-e12db",
+    "storage_bucket": "loocale-e12db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903272230008:android:278199e07fde87d479118d",
+        "android_client_info": {
+          "package_name": "com.example.loocale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903272230008-lf24icml1fd9nrj3k0h52rh2tj1bn01o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdLJqabdAon67zVuPtk_sCqs2BvLsmqxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903272230008-lf24icml1fd9nrj3k0h52rh2tj1bn01o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

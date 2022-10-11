@@ -1,0 +1,19 @@
+
+e
+5app/src/main/java/com/example/loocale/MainActivity.kt,8\a\8ae302d14ebc07f8d24dbc06b0b28293acb395dd
+n
+>app/src/main/java/com/example/loocale/boarding/Dashboardone.kt,4\8\483dd64a57b8eb34fdc156793aa8a4ee7ffb5b3d
+n
+>app/src/main/java/com/example/loocale/boarding/Dashboardtwo.kt,d\4\d4589c01c9390257a53875f605953e42e40b05ed
+p
+@app/src/main/java/com/example/loocale/boarding/Dashboardthree.kt,3\9\392fcf418477567eaee3321aaa2c1c435cadb5b6
+u
+Eapp/src/main/java/com/example/loocale/boarding/BoardingTwoActivity.kt,a\3\a3fa370f4a281c75b3ad6f025ff115744dabdd82
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+m
+=app/src/main/java/com/example/loocale/SplashScreenActivity.kt,0\6\06026e551d7e32f78fefe2b0b097d05a9daf8fcb
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+u
+Eapp/src/main/java/com/example/loocale/boarding/BoardingOneActivity.kt,c\c\cc865a363f952aa182cf4af0811cfccd9a9156bb

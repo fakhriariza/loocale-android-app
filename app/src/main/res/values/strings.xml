@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">loocale</string>
+    <string name="splash_text">#JalanKemanaAja</string>
+    <string name="boarding_title">Selamat Datang di Loocale!</string>
+    <string name="boarding_boxtitle">Apa itu Loocale?</string>
+    <string name="boarding_boxcontent">Loocale adalah social networking service berbasis digital untuk traveler yang ingin menemukan pengalaman wisata baru yang menarik dan berinteraksi dengan Warga Lokal.
+</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="boarding_one_title">Discover</string>
+    <string name="boarding_one_subtitle">New and Exciting Places</string>
+    <string name="boarding_two_title">Share</string>
+    <string name="boarding_two_subtitle">Your Unique Experiences</string>
+    <string name="boarding_three_title">Connect</string>
+    <string name="boarding_three_subtitle">with Communities Based on Your Interest</string>
+    <string name="boarding_three_starttitle">Mulai Loocale!</string>
+</resources>
