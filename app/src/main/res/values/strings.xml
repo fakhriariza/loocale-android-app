@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">loocale</string>
+    <string name="app_name">Loocale</string>
     <string name="splash_text">#JalanKemanaAja</string>
     <string name="boarding_title">Selamat Datang di Loocale!</string>
     <string name="boarding_boxtitle">Apa itu Loocale?</string>
@@ -14,4 +14,5 @@
     <string name="boarding_three_title">Connect</string>
     <string name="boarding_three_subtitle">with Communities Based on Your Interest</string>
     <string name="boarding_three_starttitle">Mulai Loocale!</string>
+    <string name="signup_title">Yuk Gabung Jadi Warga Loocal!</string>
 </resources>

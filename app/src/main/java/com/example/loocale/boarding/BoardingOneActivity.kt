@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
-import com.example.loocale.MainActivity
 import com.example.loocale.R
 import com.example.loocale.databinding.ActivityBoardingOneBinding
 
@@ -16,6 +15,7 @@ class BoardingOneActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout)
         setContentView(R.layout.activity_boarding_one)
         binding = ActivityBoardingOneBinding.inflate(layoutInflater)
         val view = binding.root
@@ -39,7 +39,7 @@ class BoardingOneActivity : AppCompatActivity() {
             binding.vpDashboard.setCurrentItem(binding.vpDashboard.currentItem-1, true)
         }
         binding.rlStart.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, SingUpFirstActivity::class.java)
             startActivity(intent)
         }
     }

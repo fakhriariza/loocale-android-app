@@ -12,4 +12,8 @@
     <color name="loocale_secondary">#F1614B</color>
     <color name="loocale_greyscale">#EDEFF1</color>
     <color name="loocale_darkgrey">#5A727F</color>
+    <color name="loocale_greyBackground">#EAEEF1</color>
+    <color name="loocale_title">#2B353C</color>
+    <color name="loocale_anothergrey">#678190</color>
+    <color name="loocale_signgrey">#EDEFF1</color>
 </resources>

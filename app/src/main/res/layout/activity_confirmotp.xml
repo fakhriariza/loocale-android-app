@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".boarding.SingUpFirstActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_58sdp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/ivLoocale"
+            android:layout_width="@dimen/_61sdp"
+            android:layout_height="@dimen/_43sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/loocalelogolite"
+            android:layout_marginBottom="@dimen/_11sdp"/>
+
+        <ImageView
+            android:id="@+id/ivBackArrow"
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:background="@drawable/ic_vector__3_"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_21sdp"/>
+
+        <View
+            android:id="@+id/vChild"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/loocale_greyBackground"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlHeader">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_36sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvOtpConfirmTitle"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Selamat Datang!"
+                android:textAlignment="center"
+                android:textColor="@color/loocale_title"
+                android:textSize="@dimen/_28ssp" />
+
+            <TextView
+                android:id="@+id/tvOtpConfirmSubtitle"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Silakan masukan kode verifikasi yang telah kami
+kirimkan ke email kamu!"
+                android:textAlignment="center"
+                android:textColor="@color/loocale_title"
+                android:textSize="@dimen/_13ssp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:orientation="vertical">
+
+                <com.chaos.view.PinView
+                    android:id="@+id/firstPinView"
+                    style="@style/PinWidget.PinView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:hint="Hint."
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppins_bold"
+                    app:cursorColor="@color/black"
+                    app:cursorWidth="2dp"
+                    app:itemCount="6"
+                    app:itemHeight="48dp"
+                    app:itemRadius="4dp"
+                    app:itemSpacing="@dimen/_10sdp"
+                    app:itemWidth="@dimen/_29sdp"
+                    app:lineColor="@color/black"
+                    app:lineWidth="@dimen/_2sdp"
+                    app:viewType="rectangle" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnVerification"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:background="@drawable/primary_button"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"
+                    android:text="Verifikasi"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvOr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Tidak menerima email? Kirim Ulang"
+                android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/elipsright"/>
+</RelativeLayout>

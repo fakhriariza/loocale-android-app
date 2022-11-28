@@ -8,7 +8,7 @@
     <ImageView
         android:id="@+id/iv_backgroundThree"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_600sdp"
+        android:layout_height="match_parent"
         android:text="@string/hello_blank_fragment"
         android:background="@drawable/backgrounddashboardthree"
         android:scaleType="centerInside"/>

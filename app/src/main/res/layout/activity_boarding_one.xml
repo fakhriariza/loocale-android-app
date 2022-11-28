@@ -15,6 +15,7 @@
         android:id="@+id/rl_navbar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_80sdp"
+        android:background="@color/white"
         android:layout_alignParentBottom="true">
 
         <ImageView

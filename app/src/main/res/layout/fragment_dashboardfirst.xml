@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -97,26 +98,29 @@
             </RelativeLayout>
         </RelativeLayout>
 
-        <RelativeLayout
+        <androidx.constraintlayout.motion.widget.MotionLayout
             android:id="@+id/rl_boardingbigbox"
             android:layout_width="@dimen/_290sdp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:visibility="invisible"
             android:background="@drawable/background_white_bordered_grey_big"
-            android:visibility="invisible">
+            app:layoutDescription="@xml/fragment_dashboardfirst_xml_rl_boardingbigbox_scene">
 
             <TextView
                 android:id="@+id/tv_mainContent"
-                android:layout_width="@dimen/_250sdp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:fontFamily="@font/poppins_regular"
                 android:includeFontPadding="false"
+                android:paddingHorizontal="@dimen/_20sdp"
                 android:paddingVertical="@dimen/_10sdp"
                 android:text="Loocale adalah social networking service berbasis digital untuk traveler yang ingin menemukan pengalaman wisata baru yang menarik dan berinteraksi dengan Warga Lokal. "
                 android:textColor="@color/black_loocale"
-                android:textSize="@dimen/_13ssp" />
+                android:textSize="@dimen/_13ssp"
+                tools:layout_editor_absoluteX="20dp" />
 
-        </RelativeLayout>
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
     </LinearLayout>
 </RelativeLayout>
