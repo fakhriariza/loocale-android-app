@@ -15,4 +15,13 @@
     <string name="boarding_three_subtitle">with Communities Based on Your Interest</string>
     <string name="boarding_three_starttitle">Mulai Loocale!</string>
     <string name="signup_title">Yuk Gabung Jadi Warga Loocal!</string>
+
+    <string-array name="add_locationoption">
+        <item>DKI Jakarta</item>
+        <item>Jawa Barat</item>
+        <item>Aceh</item>
+        <item>Jawa Tengah</item>
+        <item>Jawa Timur</item>
+        <item>DI Yogyakarta</item>
+    </string-array>
 </resources>

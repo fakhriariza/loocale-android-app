@@ -16,4 +16,6 @@
     <color name="loocale_title">#2B353C</color>
     <color name="loocale_anothergrey">#678190</color>
     <color name="loocale_signgrey">#EDEFF1</color>
+    <color name="loocale_red">#DC2A2D</color>
+    <color name="loocale_greybottomsheet">#D9D9D9</color>
 </resources>

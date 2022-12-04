@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/containerbottomsheet"
+    android:layout_marginHorizontal="@dimen/_14sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/_78sdp"
+            android:layout_height="@dimen/_4sdp"
+            android:background="@drawable/headerbottomsheet"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="@dimen/_22sdp"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:text="Halo, turislokal221_!"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_centerInParent="true"
+            android:textColor="@color/loocale_title"
+            android:textSize="@dimen/_19ssp"/>
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Kami butuh sedikit lagi informasi dari kamu nih"
+            android:textSize="@dimen/_11ssp" />
+
+        <TextView
+            android:id="@+id/tvAskTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSubtitle"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="@dimen/_53sdp"
+            android:text="Kamu dari domisili mana nih?"
+            android:layout_centerInParent="true"
+            android:textColor="@color/loocale_title"
+            android:textSize="@dimen/_12ssp"/>
+
+        <LinearLayout
+            android:id="@+id/llAskLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAskTitle"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/sp_locationprovince"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/edittext_backgroundprofcreate"
+            android:entries="@array/add_locationoption"
+            android:includeFontPadding="false"
+            android:textColor="@color/loocale_title"
+            android:textColorHint="@color/loocale_greybottomsheet"
+            android:textSize="14sp"
+            android:theme="@style/Spinner" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/sp_locationcities"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:background="@drawable/edittext_backgroundprofcreate"
+                android:entries="@array/add_locationoption"
+                android:includeFontPadding="false"
+                android:textColor="@color/loocale_title"
+                android:textColorHint="@color/loocale_greybottomsheet"
+                android:textSize="14sp"
+                android:theme="@style/Spinner"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="@dimen/_275sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:layout_below="@+id/llAskLocation"
+            android:background="@drawable/primary_button"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false"
+            android:text="Selanjutnya"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/_16ssp"
+            android:layout_marginBottom="@dimen/_34sdp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

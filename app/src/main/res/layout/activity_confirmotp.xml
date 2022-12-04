@@ -117,7 +117,7 @@ kirimkan ke email kamu!"
             </LinearLayout>
 
             <TextView
-                android:id="@+id/tvOr"
+                android:id="@+id/tvResend"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
