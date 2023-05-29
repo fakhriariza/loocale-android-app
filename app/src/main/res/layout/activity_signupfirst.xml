@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".boarding.SingUpFirstActivity">
+    tools:context=".loginsignup.FirstSignUpActivity">
 
     <RelativeLayout
         android:id="@+id/rlHeader"
@@ -78,6 +78,7 @@
                     app:backgroundTint="@color/black_loocale"
                     android:textCursorDrawable="@drawable/black_cursor"
                     android:hint="Ketik Alamat Email Kamu"
+                    android:inputType="text"
                     android:textSize="@dimen/_16ssp" />
 
                 <TextView
@@ -86,7 +87,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="Error Cuk"
+                    android:text="Email Belum Diisi"
+                    android:textColor="@color/loocale_secondary"
                     android:textSize="@dimen/_16ssp"
                     android:visibility="gone"/>
 

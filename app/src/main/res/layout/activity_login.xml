@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".boarding.SingUpFirstActivity">
+    tools:context=".loginsignup.FirstSignUpActivity">
 
     <RelativeLayout
         android:id="@+id/rlHeader"
@@ -85,6 +85,7 @@
                     android:fontFamily="@font/poppins_regular"
                     android:background="@drawable/edittext_backgroundlogin"
                     android:hint="Username atau Email"
+                    android:inputType="text"
                     android:textCursorDrawable="@drawable/black_cursor"
                     android:paddingStart="@dimen/_7sdp"
                     android:textSize="@dimen/_11ssp" />
@@ -101,6 +102,19 @@
                     android:textCursorDrawable="@drawable/black_cursor"
                     android:paddingStart="@dimen/_7sdp"
                     android:textSize="@dimen/_11ssp" />
+
+                <TextView
+                    android:id="@+id/tvError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Username/Email dan Password Tidak Sesuai atau Belum Didaftarkan"
+                    android:textAlignment="center"
+                    android:textColor="@color/loocale_red"
+                    android:textSize="@dimen/_11ssp"
+                    android:visibility="gone"/>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnSignIn"

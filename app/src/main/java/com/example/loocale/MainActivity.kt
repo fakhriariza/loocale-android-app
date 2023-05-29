@@ -1,24 +1,36 @@
 package com.example.loocale
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.example.loocale.profilecreate.CameraActivity
 import com.example.loocale.databinding.ActivityMainBinding
-import com.example.loocale.databinding.ActivitySplashScreenBinding
-import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.example.loocale.profilecreate.ProfileCreateBottomSheet
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    private var username: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         overridePendingTransition(R.anim.fadein, R.anim.fadeout)
         setContentView(R.layout.activity_main)
         binding()
-        showBottomSheet()
 
         binding.tvTitle.setOnClickListener{
+            val intent = Intent(this, CameraActivity::class.java)
+            startActivity(intent)
         }
+
+        if (intent.hasExtra("Username")) {
+                intent.getStringExtra("Username").let {
+                    username = it
+                }
+            }
+        showBottomSheet()
+        println("ada isinya gak $username")
     }
+
     fun binding() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
@@ -26,8 +38,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showBottomSheet() {
-        val bottomSheetDialog = BottomSheetDialog(this)
-        bottomSheetDialog.setContentView(R.layout.basebotoomsheet)
-        bottomSheetDialog.show()
+        val profileCreateBottomSheetInstance = ProfileCreateBottomSheet.newInstance(username)
+        println("ada isinya gak2 $username")
+        profileCreateBottomSheetInstance.show(supportFragmentManager, "")
+
     }
+
 }

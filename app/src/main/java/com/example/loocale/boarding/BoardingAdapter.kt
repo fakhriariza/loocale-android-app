@@ -14,10 +14,10 @@ class BoardingAdapter(fm: FragmentManager): FragmentPagerAdapter(fm) {
 
     override fun getItem(position: Int): Fragment {
         return  when (position) {
-            1 -> Dashboardone()
-            2 -> Dashboardtwo()
-            3 -> Dashboardthree()
-            else -> Dashboardfirst()
+            1 -> OnBoardingDiscoverFragment()
+            2 -> OnBoardingShareFragment()
+            3 -> OnBoardingConnectFragment()
+            else -> OnBoardingWelcomeFragment()
         }
     }
 

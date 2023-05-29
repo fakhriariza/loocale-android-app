@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/containerbottomsheet"
+    android:layout_marginHorizontal="@dimen/_14sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/_78sdp"
+            android:layout_height="@dimen/_4sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="@dimen/_22sdp"
+            android:background="@drawable/headerbottomsheet" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Pilih hal yang kamu sukai"
+            android:textColor="@color/loocale_title"
+            android:textSize="@dimen/_19ssp" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Silahkan Pilih hingga 5 kategori favorit"
+            android:textSize="@dimen/_11ssp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSubtitle"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/gvSelectFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:numColumns="2"
+                tools:listitem="@layout/item_connect" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_34sdp"
+            android:background="@drawable/primary_button"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false"
+            android:text="Selanjutnya"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

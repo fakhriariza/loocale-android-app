@@ -5,7 +5,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object LoocaleApi {
-    val baseUrl = "https://7155-114-124-149-175.ap.ngrok.io/api/loocale/"
+    val baseUrl = "https://api.loocale.id/api/loocale/"
     private val client = OkHttpClient.Builder().build()
 
     private val retrofit = Retrofit.Builder()

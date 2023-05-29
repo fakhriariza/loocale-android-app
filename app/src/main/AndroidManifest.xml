@@ -4,6 +4,12 @@
     package="com.example.loocale">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,30 +21,28 @@
         android:theme="@style/Theme.Loocale"
         tools:targetApi="31">
         <activity
-            android:name=".boarding.SingUpFirstActivity"
-            android:exported="true">
-        </activity>
+            android:name=".profilecreate.CameraActivity"
+            android:exported="false" />
         <activity
-            android:name=".boarding.SignUpActivity"
-            android:exported="true">
-        </activity>
+            android:name=".loginsignup.FirstSignUpActivity"
+            android:exported="true"></activity>
         <activity
-            android:name=".boarding.ConfirmOTPActivity"
-            android:exported="true">
-        </activity>
+            android:name=".loginsignup.SignUpActivity"
+            android:exported="true"></activity>
         <activity
-            android:name=".boarding.LoginActivity"
-            android:exported="true">
-        </activity>
+            android:name=".loginsignup.ConfirmOTPActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".loginsignup.LoginActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".boarding.BoardingTwoActivity"
             android:exported="false" />
         <activity
-            android:name=".boarding.BoardingOneActivity"
-            android:exported="true">
-        </activity>
+            android:name=".boarding.OnBoardingActivity"
+            android:exported="true"></activity>
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".splashscreen.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,6 +53,23 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.loocale.boarding"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
     </application>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
 
 </manifest>

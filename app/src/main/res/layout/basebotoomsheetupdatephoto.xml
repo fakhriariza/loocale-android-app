@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/containerbottomsheet"
+    android:layout_marginHorizontal="@dimen/_14sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/_78sdp"
+            android:layout_height="@dimen/_4sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="@dimen/_22sdp"
+            android:background="@drawable/headerbottomsheet" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Lengkapi profil kamu "
+            android:textColor="@color/loocale_title"
+            android:textSize="@dimen/_19ssp" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Silahkan Unggah Profil"
+            android:textSize="@dimen/_11ssp" />
+
+        <RelativeLayout
+            android:id="@+id/rlAvatar"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_below="@+id/tvSubtitle"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_27sdp">
+
+            <RelativeLayout
+                android:id="@+id/ivAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/avatar_circle"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_photo_camera" />
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cvPreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:background="@drawable/avatar_circle"
+                    app:cardCornerRadius="@dimen/_100sdp">
+
+                    <ImageView
+                        android:id="@+id/ivPreviewA"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_photo_camera"/>
+                </RelativeLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivPreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:strokeColor="@android:color/darker_gray"
+                app:shapeAppearanceOverlay="@style/circleImageView"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvGalery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlAvatar"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Atau dari Galeri"
+            android:textColor="@color/loocale_secondary"
+            android:textSize="@dimen/_12ssp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/rlAvatar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_44sdp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="@dimen/_34sdp"
+            android:background="@drawable/primary_button"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false"
+            android:text="Selanjutnya"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/tvDismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlAvatar"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_34sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Nanti Dulu"
+            android:textColor="@color/loocale_title"
+            android:textSize="@dimen/_12ssp" />
+    </RelativeLayout>
+
+</RelativeLayout>

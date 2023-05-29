@@ -1,9 +1,12 @@
 package com.example.loocale.networking
 
-import com.example.loocale.boarding.*
+import com.example.loocale.profilecreate.UserProfilesResponse
+import com.example.loocale.loginsignup.*
+import com.example.loocale.profilecreate.CitiesResponse
+import com.example.loocale.profilecreate.ConnectResponse
+import com.example.loocale.profilecreate.ProvincesResponse
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.POST
+import retrofit2.http.*
 
 interface LoocaleApiService {
 
@@ -28,7 +31,7 @@ interface LoocaleApiService {
             Call<ValidateOtpResponse?>?
 
     @POST("user/resend/otp")
-    fun resendOtp(
+    fun  resendOtp(
         @Body resendOtp: SendEmailResponse?):
             Call<SendEmailResponse?>?
 
@@ -36,4 +39,23 @@ interface LoocaleApiService {
     fun loginForm(
         @Body login: LoginResponse?):
             Call<LoginResponse?>?
+
+    @GET("provinces")
+    fun getProvincesData():
+            Call<ProvincesResponse?>?
+
+    @GET("cities")
+    fun sendCities(
+        @Query("province") province: String
+    ): Call<CitiesResponse?>?
+
+    @Multipart
+    @POST("userprofiles")
+    fun userProfiles(
+        @Body login: UserProfilesResponse?):
+            Call<UserProfilesResponse?>?
+
+    @GET("productDetail")
+    fun getConnectData(
+    ): Call<ConnectResponse?>?
 }

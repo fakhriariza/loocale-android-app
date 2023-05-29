@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/containerbottomsheet"
     android:layout_marginHorizontal="@dimen/_14sdp">
 
@@ -24,7 +25,7 @@
             android:layout_below="@id/view"
             android:layout_centerInParent="true"
             android:fontFamily="@font/poppins_bold"
-            android:text="Halo, turislokal221_!"
+            android:text="Lengkapi profil kamu "
             android:textColor="@color/loocale_title"
             android:textSize="@dimen/_19ssp" />
 
@@ -36,70 +37,62 @@
             android:layout_centerInParent="true"
             android:layout_marginTop="@dimen/_7sdp"
             android:fontFamily="@font/poppins_medium"
-            android:text="Kami butuh sedikit lagi informasi dari kamu nih"
+            android:text="Yuk ceritakan diri kamu di bio!"
             android:textSize="@dimen/_11ssp" />
 
         <TextView
-            android:id="@+id/tvAskTitle"
+            android:id="@+id/tvBio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tvSubtitle"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:layout_below="@id/tvSubtitle"
             android:fontFamily="@font/poppins_bold"
-            android:layout_marginTop="@dimen/_53sdp"
-            android:text="Kamu dari domisili mana nih?"
-            android:layout_centerInParent="true"
+            android:text="Bio"
             android:textColor="@color/loocale_title"
-            android:textSize="@dimen/_12ssp"/>
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginHorizontal="@dimen/_20sdp"/>
 
-        <LinearLayout
-            android:id="@+id/llAskLocation"
-            android:layout_width="wrap_content"
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etBio"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tvAskTitle"
-            android:layout_centerInParent="true"
-            android:orientation="vertical">
-
-        <androidx.appcompat.widget.AppCompatSpinner
-            android:id="@+id/sp_locationprovince"
-            android:layout_width="@dimen/_280sdp"
-            android:layout_height="@dimen/_30sdp"
-            android:layout_marginTop="@dimen/_16sdp"
-            android:background="@drawable/edittext_backgroundprofcreate"
-            android:includeFontPadding="false"
-            android:textColor="@color/loocale_title"
-            android:textColorHint="@color/loocale_greybottomsheet"
-            android:textSize="14sp"
-            android:theme="@style/Spinner" />
-
-            <androidx.appcompat.widget.AppCompatSpinner
-                android:id="@+id/sp_locationcities"
-                android:layout_width="@dimen/_280sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:layout_marginTop="@dimen/_11sdp"
-                android:background="@drawable/edittext_backgroundprofcreate"
-                android:includeFontPadding="false"
-                android:textColor="@color/loocale_title"
-                android:textColorHint="@color/loocale_greybottomsheet"
-                android:textSize="14sp"
-                android:theme="@style/Spinner"
-                android:visibility="visible"/>
-
-        </LinearLayout>
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_below="@+id/tvBio"
+            app:backgroundTint="@color/black_loocale"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:hint="Ceritakan Tentang Diri Kamu"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginHorizontal="@dimen/_20sdp"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSignUp"
-            android:layout_width="@dimen/_275sdp"
+            android:layout_width="@dimen/_120sdp"
             android:layout_height="@dimen/_35sdp"
-            android:layout_marginTop="@dimen/_26sdp"
-            android:layout_below="@+id/llAskLocation"
+            android:layout_below="@+id/etBio"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:layout_marginBottom="@dimen/_34sdp"
             android:background="@drawable/primary_button"
             android:fontFamily="@font/poppins_bold"
             android:includeFontPadding="false"
-            android:text="Selanjutnya"
+            android:text="Selesai"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:layout_centerInParent="true"
-            android:textSize="@dimen/_16ssp"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/tvDismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_105sdp"
+            android:layout_below="@id/etBio"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Nanti Dulu"
+            android:textColor="@color/loocale_title"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
             android:layout_marginBottom="@dimen/_34sdp"/>
     </RelativeLayout>
 

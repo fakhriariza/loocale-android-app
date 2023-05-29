@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".boarding.SingUpFirstActivity">
+    tools:context=".loginsignup.FirstSignUpActivity">
 
     <RelativeLayout
         android:id="@+id/rlHeader"
@@ -101,6 +101,19 @@ kirimkan ke email kamu!"
                     app:lineColor="@color/black"
                     app:lineWidth="@dimen/_2sdp"
                     app:viewType="rectangle" />
+
+                <TextView
+                    android:id="@+id/tvError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="OTP Salah"
+                    android:textAlignment="center"
+                    android:textColor="@color/loocale_title"
+                    android:textSize="@dimen/_13ssp"
+                    android:visibility="gone"/>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnVerification"
